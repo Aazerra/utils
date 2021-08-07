@@ -20,6 +20,15 @@ is_null_or_empty(None)  # => True
 is_null_or_empty("")    # => True
 is_null_or_empty("Hi")  # => False
 ```
+- translate: translate character you given to what you want
+```python
+from utils.strings import translate
+translate("123456", {
+    "1": "2",
+    "2": "3",
+    "3": "4"
+}) # => output: 234456
+```
 
 ## Lists
 - chunks: Yield successive n-sized chunks from arr.
@@ -44,3 +53,8 @@ take([1], 2)  # => [1]
 from utils.url import join
 join("www.sadtech.ir", "start", "?ok=true") # => 'www.sadtech.ir/start/?ok=true'
 ```
+
+## To-do
+- [ ] create documentation for all of the functions
+- [ ] type checking
+- [ ] add more functionality
