@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='utils-aazerra',
-    version='0.0.4',
+    version='0.0.6',
     packages=['utils'],
     url='https://github.com/Aazerra/utils',
     license='MIT',

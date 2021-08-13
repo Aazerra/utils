@@ -1,6 +1,19 @@
 from typing import Union
 
 
+def strip(x: Union[list, str]) -> Union[list, str]:
+    """
+    Strip string
+    if x is list it going to strip all members of the list
+    if x is str its going to do strip on that string only
+    :param x:
+    :return:
+    """
+    if isinstance(x, str):
+        return x.strip()
+    return list(map(lambda y: y.strip(), x))
+
+
 def is_null_or_empty(string: Union[str, None]) -> bool:
     """
     Is checking string is none or empty
