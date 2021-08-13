@@ -5,7 +5,7 @@ __pycache__/
 
 # C extensions
 *.so
-
+.gitmoji-changelogrc
 # Distribution / packaging
 .Python
 build/
