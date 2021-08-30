@@ -11,8 +11,6 @@ digits = {
     "9": "۹",
 }
 
-trans = str.maketrans(digits)
-
 
 def convert_digits(x: str) -> str:
     """
@@ -20,6 +18,8 @@ def convert_digits(x: str) -> str:
     :param x: string with english digits
     :return: string with persian digits
     """
+    trans = str.maketrans(digits)
+
     if not isinstance(x, str):
         raise Exception("x is not string")
     return x.translate(trans)
