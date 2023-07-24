@@ -8,4 +8,11 @@ def chunks(arr, n=2):
 
 
 def flatten(arr):
-    return list(chain(*arr))
+    """Flatten a array"""
+    result = []
+    for item in arr:
+        if isinstance(item, list):
+            result.extend(flatten(item))
+        else:
+            result.append(item)
+    return result
